@@ -9,9 +9,7 @@ job('learning_dsl_run_parameter') {
         maxTotal(2)
     }
 	
-	}
-	
-	triggers {
+		triggers {
         scm('H/15 * * * *')
     }
 	
