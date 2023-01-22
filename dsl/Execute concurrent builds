@@ -1,0 +1,6 @@
+job('Moin_Lab')
+ {
+description('Learning In Lab')
+    concurrentBuild()
+	
+}
