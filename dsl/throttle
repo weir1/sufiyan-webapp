@@ -1,0 +1,21 @@
+job('learning_dsl_run_parameter') {
+    description('dsl_lab_session')
+	parameters {
+        stringParam('myParameterName', 'my default stringParam value', 'my description')
+    }
+	
+	throttleConcurrentBuilds {
+        maxPerNode(1)
+        maxTotal(2)
+    }
+	
+	}
+	
+	triggers {
+        scm('H/15 * * * *')
+    }
+	
+	steps {
+        shell("echo 'Hello World'")
+    }
+}
