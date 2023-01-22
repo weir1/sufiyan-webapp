@@ -1,6 +1,7 @@
 job('Moin_Lab')
  {
 description('Learning In Lab')
+discardOldBuilds(int daysToKeep = -1, int numToKeep = -1, int artifactDaysToKeep = -1, int artifactNumToKeep = -1)
     concurrentBuild()
 	
 }
